@@ -1,3 +1,6 @@
+Author: Bilal Nurhusien
+Created on: 2013-08-05 
+
 Description:
 Implemented the median maintenance algorithm using max and min heaps.
 

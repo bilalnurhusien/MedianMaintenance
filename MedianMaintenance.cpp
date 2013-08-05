@@ -39,11 +39,10 @@ struct Comp
 const char* inputfile = "./Test1.txt";
 
 /*
- * Precondition: Input file is a text file (containing numbers) located in the project
- *               directory. Each line of the file contains a number from 1-10000.
+ * Precondition: Input file is a text file located in the project directory.
+ *               Each line of the file contains a number from 1-10000.
  *
- * Postcondition: Every number in the file is stored store in the queue starting
- * 		          from the first line.
+ * Postcondition: Every number in the file is stored in the queue (M).
  */
 
 int readfile(queue<unsigned int>& Q) {
@@ -70,9 +69,10 @@ int readfile(queue<unsigned int>& Q) {
 /*
  * Precondition: Q is a non-empty queue
  *
- * Postcondition: Returns the medium of numbers in MaxHeap and MinHeap. Decrease
- *                the queue size by 1. Insert the number that was read from queue
- *                to either MaxHeap or MinHeap.
+ * Postcondition: Returns the medium of numbers in read so far. The size of Q
+ *                decreases by 1. The size of MaxHeap or MinHeap increase by 1.
+ *                i.e. a number is taken from Q and inserted into either MaxHeap
+ *                or MinHeap.
  */
 
 unsigned int MedianMaintenance (queue<unsigned int>& Q, vector<unsigned int>& MaxHeap,
@@ -90,8 +90,8 @@ unsigned int MedianMaintenance (queue<unsigned int>& Q, vector<unsigned int>& Ma
 
 	/*
 	 * Step 1: Add the next number to one of the heaps. If the
-	 * next number is greater than the root of MinHeap, add the
-	 * number to MinHeap, otherwise add it to MaxHeap.
+	 * number is greater than the root of MinHeap, add it to
+	 * MinHeap, otherwise add it to MaxHeap.
 	 */
 
 	if (next > min) {
@@ -105,8 +105,9 @@ unsigned int MedianMaintenance (queue<unsigned int>& Q, vector<unsigned int>& Ma
 	}
 
 	/*
-	 * Step 2: Balance the heaps. The heaps will either be of
-	 * the same size or one of them will contain 1 more item.
+	 * Step 2: Balance the heaps. The heaps will either have
+	 * the same number of elements or one of them will contain
+	 * 1 more item.
 	 */
 
 	if (int (MinHeap.size() - MaxHeap.size()) > 1) {
@@ -164,7 +165,7 @@ int main () {
 	while(Q.size() != 0)
 		sum += MedianMaintenance(Q, MaxHeap, MinHeap);
 
-	// Display the median sum of numbers modulo 10000 using standard output.
+	// Display the (median sum of numbers) modulo 10000 using standard output.
 	sum = sum % 10000;
 	cout << "Median sum: " << sum << endl;
 }

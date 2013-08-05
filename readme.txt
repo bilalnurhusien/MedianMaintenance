@@ -5,7 +5,7 @@ Description:
 Implemented the median maintenance algorithm using max and min heaps.
 
 Input File:
-The text file contains a list of the integers from 1 to 10000 in unsorted order
+The text file contains a list of the integers from 1 to 10000 in unsorted order.
 The numbers are treated as a stream of integers arriving one by one. Let xi
 denote the ith number of the file. The kth median mk is defined as the median
 of the numbers x1,...,xk. If k is odd, then mk is the ((k+1)/2)th smallest

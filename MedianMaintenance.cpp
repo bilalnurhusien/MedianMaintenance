@@ -8,14 +8,14 @@
  *  Implemented the median maintenance algorithm using max and min heaps.
  *
  *  Input File:
- *  The text file contains a list of the integers from 1 to 10000 in unsorted order
+ *  The text file contains a list of the integers from 1 to 10000 in unsorted order.
  *  The numbers are treated as a stream of integers arriving one by one. The input
  *  file was taken from an Algorithms and Analysis course from Stanford, taught by
  *  Tim Roughgarden.
  *
  *  Output:
  *  The median sum of numbers modulo 10000 is displayed using standard output.
- *  i.e. The output is (m1+m2+m3+...+m10000)mod10000 where m1 is the first
+ *  i.e. The output is (m1+m2+m3+...+m10000) modulo 10000 where m1 is the first
  *  median, m2 is the second median, etc.
  *
  */

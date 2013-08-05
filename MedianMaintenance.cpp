@@ -36,13 +36,13 @@ struct Comp
   }
 };
 
-const char* inputfile = "./Test1.txt";
+const char* inputfile = "./Test2.txt";
 
 /*
  * Precondition: Input file is a text file located in the project directory.
  *               Each line of the file contains a number from 1-10000.
  *
- * Postcondition: Every number in the file is stored in the queue (M).
+ * Postcondition: Every number in the file is stored in the queue (Q).
  */
 
 int readfile(queue<unsigned int>& Q) {

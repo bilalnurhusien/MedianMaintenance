@@ -76,8 +76,8 @@ int readfile(queue<unsigned int>& Q) {
  */
 
 unsigned int MedianMaintenance (queue<unsigned int>& Q, vector<unsigned int>& MaxHeap,
-								vector<unsigned int>& MinHeap) {
-    unsigned int min = 0;
+                                vector<unsigned int>& MinHeap) {
+	unsigned int min = 0;
 	unsigned int median = 0;
 
 	// Read next number in queue

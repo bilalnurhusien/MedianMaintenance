@@ -5,12 +5,11 @@ Description:
 Implemented a variant of the median maintenance algorithm using max and min heaps.
 
 Input File:
-The text file (Median.txt) contains a list of the integers from 1 to 10000 
-in unsorted order. The numbers are treated as a stream of integers arriving 
-one by one. Let xi denote the ith number of the file. The kth median mk is 
-defined as the median of the numbers x1,...,xk. If k is odd, then mk is the
-((k+1)/2)th smallest number among x1,...,xk; if k is even, then mk is the 
-(k/2)th smallest number among x1,...,xk.
+The text file (Median.txt) contains a list of integers from 1 to 10000 in unsorted
+order. The numbers are treated as a stream of integers arriving one by one. Let xi
+denote the ith number of the file. The kth median mk is defined as the median of the
+numbers x1,...,xk. If k is odd, then mk is the((k+1)/2)th smallest number among 
+x1,...,xk; if k is even, then mk is the (k/2)th smallest number among x1,...,xk.
 
 The input file was taken from an Algorithms and Analysis course from Stanford,
 taught by Tim Roughgarden.

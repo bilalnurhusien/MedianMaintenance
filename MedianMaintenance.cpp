@@ -161,7 +161,7 @@ int main () {
 	make_heap(MaxHeap.begin(),MaxHeap.end());
 	make_heap(MinHeap.begin(),MinHeap.end(), Comp());
 
-	// Add median to sum
+	// Add medians to sum
 	while(Q.size() != 0)
 		sum += MedianMaintenance(Q, MaxHeap, MinHeap);
 

@@ -1,7 +1,7 @@
 /*
  *  File: MedianMaintenance.cpp
  *
- *  Copyright 2013 © Bilal Nurhusien
+ *  Copyright 2013 ï¿½ Bilal Nurhusien
  *  This program is free software.
  *
  *  Description:
@@ -36,7 +36,7 @@ struct Comp
   }
 };
 
-const char* inputfile = "./Test2.txt";
+const char* inputfile = "./Median.txt";
 
 /*
  * Precondition: Input file is a text file located in the project directory.

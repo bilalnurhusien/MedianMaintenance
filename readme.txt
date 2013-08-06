@@ -2,7 +2,7 @@ Author: Bilal Nurhusien
 Created on: 2013-08-05 
 
 Description:
-Implemented the median maintenance algorithm using max and min heaps.
+Implemented a variant of the median maintenance algorithm using max and min heaps.
 
 Input File:
 The text file (Median.txt) contains a list of the integers from 1 to 10000 

@@ -11,7 +11,7 @@ denote the ith number of the file. The kth median mk is defined as the median of
 numbers x1,...,xk. If k is odd, then mk is the ((k+1)/2)th smallest number among 
 x1,...,xk; if k is even, then mk is the (k/2)th smallest number among x1,...,xk.
 
-The input file was taken from an Algorithms and Analysis course from Stanford,
+The input file was taken from an Algorithms: Design and Analysis course from Stanford,
 taught by Tim Roughgarden.
 
 Output:

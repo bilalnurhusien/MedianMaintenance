@@ -1,7 +1,7 @@
 /*
  *  File: MedianMaintenance.cpp
  *
- *  Copyright 2013 � Bilal Nurhusien
+ *  Copyright 2013 © Bilal Nurhusien
  *  This program is free software.
  *
  *  Description:
@@ -36,8 +36,6 @@ struct Comp
   }
 };
 
-const char* inputfile = "./Median.txt";
-
 /*
  * Precondition: Input file is a text file located in the project directory.
  *               Each line of the file contains a number from 1-10000.
@@ -46,6 +44,7 @@ const char* inputfile = "./Median.txt";
  */
 
 int readfile(queue<unsigned int>& Q) {
+	const char* inputfile = "./Median.txt";
 	std::string line;
 	std::ifstream infile;
 	infile.open(inputfile);
@@ -165,7 +164,7 @@ int main () {
 	while(Q.size() != 0)
 		sum += MedianMaintenance(Q, MaxHeap, MinHeap);
 
-	// Display the (median sum of numbers) modulo 10000 using standard output.
+	// Display the median sum of numbers modulo 10000 using standard output.
 	sum = sum % 10000;
 	cout << "Median sum: " << sum << endl;
 }
